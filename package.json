@@ -4,10 +4,10 @@
   "description": "",
   "type": "module",
   "private": true,
-  "main": "dist/server/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "compile": "tsc -p .",
-    "start": "npm run compile && node ./dist/server/index.js",
+    "start": "npm run compile && node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "codegen": "graphql-codegen --config codegen.yml",
     "dev": "npm run start && cd client && npm run dev "
