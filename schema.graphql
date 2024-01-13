@@ -1,0 +1,14 @@
+type Query {
+  creditCard: CreditCard
+}
+
+type Mutation {
+  validateCreditCard(creditCardNumber: String!): Boolean!
+}
+
+type CreditCard {
+  name: String
+  number: String!
+  expiration: String
+  cvv: String
+}
