@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "index.js",
+  "private": true,
+  "main": "dist/server/index.js",
   "scripts": {
     "compile": "tsc -p .",
     "start": "npm run compile && node ./dist/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "codegen": "graphql-codegen --config codegen.ts"
+    "codegen": "graphql-codegen --config codegen.yml",
+    "dev": "npm run start && cd client && npm run dev "
   },
   "author": "Megan Swanby",
   "license": "ISC",

@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
-    "rootDirs": ["servicer"],
+    "strict": true,
     "outDir": "dist",
-    "lib": ["es2020"],
+    "lib": ["es2020", "DOM"],
     "target": "es2020",
     "module": "esnext",
     "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noUncheckedIndexedAccess": true,
+    "useUnknownInCatchVariables": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "types": ["node"]
-  }
+  },
+  "exclude": ["node_modules", "**/node_modules/", "client"]
 }
